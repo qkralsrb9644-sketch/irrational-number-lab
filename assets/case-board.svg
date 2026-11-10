@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="570" viewBox="0 0 640 570" role="img" aria-labelledby="title desc">
+<title id="title">√2의 정체를 찾는 탐정의 단서 보드</title><desc id="desc">한 변이 1인 정사각형의 대각선 √2를 확대경으로 살펴보는 그림</desc>
+<defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#d9d2ed" stroke-width="1"/></pattern><filter id="shadow" x="-30%" y="-30%" width="170%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#2e2059" flood-opacity=".13"/></filter></defs>
+<rect x="48" y="28" width="535" height="494" rx="38" fill="#eee8f8" transform="rotate(5 316 275)"/>
+<g transform="rotate(-5 300 270)" filter="url(#shadow)"><rect x="62" y="44" width="476" height="462" rx="8" fill="#fffef9"/><rect x="62" y="44" width="476" height="462" rx="8" fill="url(#grid)"/>
+<rect x="234" y="28" width="144" height="38" fill="#d8ee88" opacity=".86" transform="rotate(3 306 47)"/>
+<text x="94" y="104" fill="#766d84" font-family="sans-serif" font-size="15" letter-spacing="3">EVIDENCE NO. 001</text>
+<rect x="148" y="160" width="218" height="218" rx="3" fill="#dbcef7" stroke="#6e46bb" stroke-width="3"/>
+<path d="M148 378L366 160" stroke="#5d359e" stroke-width="5" stroke-dasharray="10 7"/>
+<path d="M148 351H175V378" fill="none" stroke="#6e46bb" stroke-width="2"/>
+<text x="249" y="410" fill="#433052" font-family="sans-serif" font-size="25">1</text><text x="117" y="277" fill="#433052" font-family="sans-serif" font-size="25">1</text>
+<text x="110" y="467" fill="#6b5783" font-family="sans-serif" font-size="22">1² + 1² = ?²</text></g>
+<g transform="rotate(21 434 277)"><path d="M450 353L462 477" stroke="#322840" stroke-width="40" stroke-linecap="round"/><path d="M450 353L455 402" stroke="#9b81bd" stroke-width="25"/><circle cx="438" cy="260" r="102" fill="#f5ffd8" stroke="#322840" stroke-width="15"/><circle cx="438" cy="260" r="87" fill="#edf5ce" stroke="#fff" stroke-width="3"/><path d="M372 234Q385 195 426 191" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/><text x="438" y="285" text-anchor="middle" fill="#51317c" font-family="sans-serif" font-size="69" font-weight="bold" transform="rotate(-21 438 260)">√2</text></g>
+<g transform="rotate(-9 139 435)"><rect x="48" y="407" width="179" height="62" rx="14" fill="#6b43b6"/><text x="138" y="445" text-anchor="middle" fill="#fff" font-family="sans-serif" font-size="23" font-weight="bold">1.414…</text></g>
+<path d="M555 96v34M538 113h34M50 295v24M38 307h24" stroke="#9b79cf" stroke-width="4" stroke-linecap="round"/>
+<circle cx="578" cy="390" r="8" fill="#b8d963"/><circle cx="65" cy="146" r="6" fill="#b8d963"/>
+</svg>

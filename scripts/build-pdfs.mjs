@@ -1,0 +1,14 @@
+import { lesson } from '../lesson-data.js';
+import { spawnSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { homedir } from 'node:os';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const bundled = path.join(homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe');
+const python = process.env.PYTHON || (existsSync(bundled) ? bundled : 'python');
+const result = spawnSync(python, [path.join(root, 'scripts/build-pdfs.py')], {input: JSON.stringify(lesson), encoding: 'utf-8', cwd: root, env: {...process.env, PYTHONUTF8:'1'}});
+process.stdout.write(result.stdout || '');
+process.stderr.write(result.stderr || '');
+if (result.error) throw result.error;
+process.exitCode = result.status || 0;

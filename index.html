@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6840af">
+  <title>무리수 탐정단 | √2의 정체를 밝혀라!</title>
+  <meta name="description" content="중학교 3학년 무리수 45분 탐구 수업. 도형 실험, 수 분류 미션, 학습자료와 활동지 PDF를 만나 보세요.">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="#top"><span class="brand-mark">√2</span><span>무리수 탐정단<small>MATH DETECTIVE LAB</small></span></a>
+  <nav aria-label="주요 메뉴"><a href="#concept">개념 자료</a><a href="#lab">탐구 미션</a><a href="#resources">PDF 자료실 <span aria-hidden="true">↗</span></a></nav>
+  <a class="teacher-link" href="#teacher">교사용 안내</a>
+</div></header>
+<main id="main">
+<section class="hero wrap" id="top" aria-labelledby="hero-title">
+  <div class="hero-copy"><div class="eyebrow"><span class="green-dot"></span> 중학교 3학년 · 수와 연산 <span class="separator">/</span> 45분</div>
+    <p class="case-label">CASE 01. 끝나지 않는 숫자의 비밀</p>
+    <h1 id="hero-title">분수로는 잡히지 않는<br><span>수상한 수,</span> √2</h1>
+    <p class="hero-description">모양은 단순한데, 길이는 수상하다.<br>단서를 모아 <strong>무리수의 정체</strong>를 밝혀 보자!</p>
+    <div class="hero-actions"><a class="button primary" href="#case">수사 시작하기 <span aria-hidden="true">→</span></a><a class="button outline" href="./downloads/student-set.pdf" download>학생용 PDF <span aria-hidden="true">↓</span></a></div>
+    <div class="hero-meta"><span>✓ 로그인 없이 바로 탐구</span><span>✓ 웹 탐구 + 종이 활동지</span></div>
+  </div>
+  <div class="hero-art"><span class="art-sticker">오늘의 용의자 <b>√2</b></span><img src="./assets/case-board.svg" alt="한 변이 1인 정사각형의 대각선 √2를 확대경으로 살펴보는 단서 보드" width="640" height="570"><span class="art-caption">정확한 길이와 근삿값, 무엇이 다를까?</span></div>
+</section>
+<div class="wrap"><div class="mission-brief"><span class="brief-icon" aria-hidden="true">◎</span><div><strong>오늘의 수사 목표</strong><p>무리수를 구분하고, 정확한 길이를 나타낼 때 왜 필요한지 설명할 수 있다.</p></div><span class="standard-pill">2022 개정 교육과정</span></div></div>
+<noscript><div class="wrap notice">탐구와 채점에는 JavaScript가 필요합니다. 아래 PDF 자료실에서 학습자료와 활동지를 내려받아 수업할 수 있습니다.</div></noscript>
+<div class="journey-wrap"><nav class="journey wrap" aria-label="수업 단계"><a href="#case"><span>01</span> 사건 접수 <small>5분</small></a><a href="#lab"><span>02</span> 단서 탐구 <small>12분</small></a><a href="#concept"><span>03</span> 개념 정리 <small>8분</small></a><a href="#mission"><span>04</span> 분류 미션 <small>15분</small></a><a href="#exit"><span>05</span> 출구 티켓 <small>5분</small></a></nav></div>
+<div class="wrap progress-row"><span id="progress-text" aria-live="polite">수사 진행 0 / 5</span><progress id="progress" max="5" value="0" aria-label="완료한 수업 단계">0/5</progress><button class="text-button" id="reset" type="button">처음부터</button></div>
+<div class="wrap" id="reset-confirm" hidden><div class="notice">이 기기에 저장된 답과 진행 상태를 지울까요? <button class="button small" id="reset-yes" type="button">초기화하기</button> <button class="text-button" id="reset-no" type="button">취소</button></div></div>
+<div id="storage-notice" class="wrap notice" role="status" hidden>이 브라우저에서는 진행 상태를 저장할 수 없습니다. 지금 화면에서 활동은 계속할 수 있습니다.</div>
+
+<section id="case" class="section wrap" aria-labelledby="case-title">
+  <div class="section-heading"><div><p class="overline">01 / 사건 접수</p><h2 id="case-title">이 길이, 정말 분수로 쓸 수 있을까?</h2></div><span class="time-pill">5분</span></div>
+  <div class="case-grid"><article class="paper-card case-story"><span class="mini-label">사건 기록</span><h3>정사각형 전시판에<br>대각선 띠를 붙여라.</h3><p>한 변의 길이가 <strong>1 m</strong>인 정사각형.<br>한 모서리에서 반대쪽 모서리까지 곧게 띠를 붙인다면, 길이는 얼마일까?</p><div class="equation">1² + 1² = <span>□²</span></div></article>
+  <div class="case-prompts"><h3>계산하기 전에, 먼저 이야기해 봐.</h3><ol class="prompt-list"><li><span>01</span><div><strong>어림하기</strong><p>대각선은 1 m보다 길까? 2 m보다 짧을까?</p></div></li><li><span>02</span><div><strong>기억 꺼내기</strong><p>피타고라스 정리를 쓰면 어떤 식이 나올까?</p></div></li><li><span>03</span><div><strong>추측 남기기</strong><p>이 길이를 유한소수나 분수로 정확히 쓸 수 있을까?</p></div></li></ol><p class="paper-note">✎ 활동지 1쪽 · ‘나의 첫 추측’에 기록해 보자.</p></div></div>
+  <button class="complete-button" data-complete="case" type="button" aria-pressed="false">사건 접수 완료 <span aria-hidden="true">✓</span></button>
+</section>
+
+<section id="lab" class="section tinted" aria-labelledby="lab-title"><div class="wrap">
+  <div class="section-heading"><div><p class="overline">02 / 단서 탐구</p><h2 id="lab-title">제곱해서 2가 되는 수를 찾아라.</h2><p>슬라이더를 움직여 보고, 두 수 사이로 수사 범위를 좁혀 보자.</p></div><span class="time-pill">12분</span></div>
+  <div class="lab-grid"><div class="lab-visual"><div class="mini-label">대각선 길이 탐구실</div>
+  <svg id="lab-svg" viewBox="0 0 460 350" role="img" aria-labelledby="lab-svg-title lab-svg-desc"><title id="lab-svg-title">한 변이 1인 정사각형과 대각선</title><desc id="lab-svg-desc">보라색 점선은 정확한 대각선 √2, 초록색 선은 선택한 길이를 나타냅니다.</desc><defs><pattern id="lab-grid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#e8e0f2"/></pattern></defs><rect width="460" height="350" fill="url(#lab-grid)"/><rect x="105" y="110" width="200" height="200" fill="#e9def8" stroke="#7851ae" stroke-width="2"/><path d="M105 285H130V310" fill="none" stroke="#7851ae" stroke-width="2"/><line x1="105" y1="310" x2="305" y2="110" stroke="#6840af" stroke-width="5" stroke-dasharray="8 6"/><line id="guess-line" x1="105" y1="310" x2="304.97" y2="110.03" stroke="#698b27" stroke-width="3"/><circle id="guess-dot" cx="304.97" cy="110.03" r="7" fill="#cde78d" stroke="#45631a" stroke-width="2"/><text x="200" y="344" text-anchor="middle">1 m</text><text x="56" y="216">1 m</text><text x="261" y="237" fill="#6840af" font-size="29">√2 m</text></svg>
+  <div class="legend"><span><i class="purple-line"></i> 정확한 대각선</span><span><i class="green-line"></i> 내가 선택한 길이</span></div></div>
+  <div class="lab-controls"><label class="mini-label" for="length-slider">내가 선택한 길이 x</label><div class="big-number"><output id="length-output" for="length-slider">1.414</output><span>m</span></div><input id="length-slider" type="range" min="1000" max="2000" step="1" value="1414" aria-valuetext="1.414 미터"><div class="range-labels"><span>1.000 m</span><span>2.000 m</span></div>
+  <div class="preset-row" aria-label="단서 값 선택"><button type="button" data-value="1400">1.4</button><button type="button" data-value="1500">1.5</button><button type="button" data-value="1410">1.41</button><button type="button" data-value="1420">1.42</button><button type="button" data-value="1414">1.414</button><button type="button" data-value="1415">1.415</button></div>
+  <div class="result-box" aria-live="polite" aria-atomic="true"><span>선택한 수의 제곱 x²</span><strong><output id="square-output">1.999396</output> <span id="relation-output">&lt; 2</span></strong><p id="length-feedback">아직 짧아요. 선택한 길이는 √2 m보다 작습니다.</p></div>
+  <p class="hint">작은 쪽의 제곱 &lt; 2 &lt; 큰 쪽의 제곱<br>→ √2는 그 두 양수 사이에 있어!</p></div></div>
+  <div class="clue-strip"><strong>탐정의 기록</strong><p>1.4 &lt; √2 &lt; 1.5 → 1.41 &lt; √2 &lt; 1.42 → <b>1.414 &lt; √2 &lt; 1.415</b></p></div>
+  <p class="caution">계산기 화면은 소수의 일부만 보여 줍니다. 이 실험은 근삿값을 찾는 활동이며, 무리수라는 사실을 증명하는 활동은 아닙니다.</p>
+  <button class="complete-button" data-complete="lab" type="button" aria-pressed="false">단서 탐구 완료 <span aria-hidden="true">✓</span></button>
+</div></section>
+
+<section id="concept" class="section wrap" aria-labelledby="concept-title"><div class="section-heading"><div><p class="overline">03 / 개념 정리</p><h2 id="concept-title">이 수의 이름은, 무리수.</h2></div><span class="time-pill">8분</span></div>
+  <div class="concept-intro"><p><strong>무리수</strong>는 두 정수 a, b의 비 <span class="math">a/b (b ≠ 0)</span>로 나타낼 수 없는 수야.<br>소수로 나타내면 <em>순환하지 않는 무한소수</em>가 돼.</p><span class="concept-stamp" aria-hidden="true">IDENTIFIED<br><b>√2</b></span></div>
+  <div class="concept-grid"><article class="concept-card"><span class="mini-label">RATIONAL NUMBER</span><h3>유리수</h3><p>두 정수의 비로 나타낼 수 있는 수</p><div class="number-examples">−3 &nbsp; 0 &nbsp; 1/2 &nbsp; √4</div><ul><li>정수도 유리수에 포함돼.</li><li>소수로는 유한소수 또는 순환소수야.</li><li>0.333… = 1/3 (3이 반복)</li></ul></article><article class="concept-card purple-card"><span class="mini-label">IRRATIONAL NUMBER</span><h3>무리수</h3><p>두 정수의 비로 나타낼 수 없는 수</p><div class="number-examples">√2 &nbsp; √3 &nbsp; π</div><ul><li>순환하지 않는 무한소수야.</li><li>√2는 대각선 길이를 정확히 나타내.</li><li>소수 근삿값은 측정·비교에 편리해.</li></ul></article></div>
+  <div class="real-number"><span>실수</span><div><b>유리수</b><i>+</i><b>무리수</b></div><p>두 종류를 합쳐 실수라고 해. 두 종류에 동시에 속하는 수는 없어.</p></div>
+  <div class="myths"><h3>이 함정은 피해 가자!</h3><div><p><span class="false-tag">오해</span> 근호가 있으면 모두 무리수?</p><p><strong>√4 = 2.</strong> 기호보다 실제 값을 확인해.</p></div><div><p><span class="false-tag">오해</span> 끝없이 이어지는 소수는 모두 무리수?</p><p><strong>0.333… = 1/3.</strong> 순환소수는 유리수야.</p></div><div><p><span class="false-tag">오해</span> √2는 1.414와 같다?</p><p><strong>√2 ≈ 1.414.</strong> 가까운 값이지, 같은 값은 아니야.</p></div></div>
+  <button class="complete-button" data-complete="concept" type="button" aria-pressed="false">개념 정리 완료 <span aria-hidden="true">✓</span></button>
+</section>
+
+<section id="mission" class="section tinted" aria-labelledby="mission-title"><div class="wrap"><div class="section-heading"><div><p class="overline">04 / 분류 미션</p><h2 id="mission-title">여덟 개의 수, 정체를 밝혀라.</h2><p>먼저 활동지에 이유를 적고, 짝과 비교한 다음 정답을 확인해 봐.</p></div><span class="time-pill">15분</span></div>
+  <form id="cards-form"><div id="number-cards" class="number-card-grid"></div><div class="check-row"><button class="button primary" type="submit">분류 결과 확인 <span aria-hidden="true">→</span></button><p id="cards-summary" role="status">8개의 수를 모두 분류해 보세요.</p></div></form>
+  <article class="application-card"><span class="mini-label">마지막 단서 · 생활 속 무리수</span><h3>그래서, 띠는 얼마나 필요할까?</h3><p id="application-question"></p><p class="paper-note">✎ 활동지 2쪽 · 정확한 값 / 근삿값 / 두 표현의 쓰임</p><details><summary>기록한 뒤 예시 답안 보기</summary><p id="application-answer"></p><p>자르거나 주문할 때에는 반올림한 값만 믿기보다 필요한 여유 길이도 생각해 보세요.</p></details></article>
+  <button class="complete-button" data-complete="mission" type="button" aria-pressed="false">분류와 설명 완료 <span aria-hidden="true">✓</span></button>
+</div></section>
+
+<section id="exit" class="section wrap" aria-labelledby="exit-title"><div class="section-heading"><div><p class="overline">05 / 출구 티켓</p><h2 id="exit-title">사건 종결 전, 마지막 확인.</h2><p>혼자 힘으로 3문항을 풀고, 오늘 찾은 단서를 한 문장으로 정리해 봐.</p></div><span class="time-pill">5분</span></div>
+  <form id="exit-form"><div id="exit-questions" class="exit-grid"></div><div class="check-row"><button class="button primary" type="submit">내 이해 확인하기 <span aria-hidden="true">✓</span></button><p id="exit-summary" role="status">정답보다 중요한 건, 이유를 설명하는 것!</p></div></form>
+  <div class="reflection"><strong>나의 수사 보고서</strong><p>“무리수는 __________ 이고, __________ 할 때 유용하다.”</p><span>활동지에 적은 뒤 짝에게 설명해 보자.</span></div>
+  <button class="complete-button" data-complete="exit" type="button" aria-pressed="false">오늘의 수사 완료 <span aria-hidden="true">✓</span></button><p id="completion-message" class="success-message" hidden role="status">수사 완료! 무리수를 구분하는 데 쓴 근거를 다시 한 번 말해 보세요.</p>
+</section>
+
+<section id="resources" class="section resources" aria-labelledby="resources-title"><div class="wrap"><div class="section-heading"><div><p class="overline">DETECTIVE TOOLKIT</p><h2 id="resources-title">종이 위에서도, 수사는 계속.</h2><p>A4로 출력해서 바로 사용하세요. 학생용 세트에는 정답이 포함되지 않습니다.</p></div><a class="button primary" href="./downloads/student-set.pdf" download>학생용 세트 받기 ↓</a></div>
+  <div class="download-grid"><a class="download-card" href="./downloads/learning-guide.pdf" download><span class="file-icon" aria-hidden="true">01</span><span><strong>개념 학습자료</strong><small>핵심 개념 · 예시 · 오개념 / PDF 2쪽</small></span><b aria-hidden="true">↓</b></a><a class="download-card" href="./downloads/worksheet.pdf" download><span class="file-icon" aria-hidden="true">02</span><span><strong>학생 활동지</strong><small>탐구 기록 · 분류 미션 · 출구 티켓 / PDF 2쪽</small></span><b aria-hidden="true">↓</b></a><a class="download-card" href="./downloads/teacher-guide.pdf" download><span class="file-icon" aria-hidden="true">03</span><span><strong>교사용 지도·해설</strong><small>수업 흐름 · 정답 · 피드백 / PDF 3쪽</small></span><b aria-hidden="true">↓</b></a></div><p class="download-note">학생용 세트 = 개념 학습자료 2쪽 + 활동지 2쪽. PDF가 새 탭에 열리면 뷰어의 다운로드 버튼을 눌러 저장하세요.</p>
+</div></section>
+<section id="teacher" class="section wrap teacher-section" aria-labelledby="teacher-title"><p class="overline">TEACHER’S NOTES</p><h2 id="teacher-title">수업을 준비하는 선생님께</h2>
+  <details><summary>수업 운영과 준비물</summary><div class="details-body"><p>2027학년도 이후 중학교 3학년용, 45분 한 차시입니다. 학교명 없이 공동 활용할 수 있도록 구성했습니다. 교사 화면 또는 모둠별 기기, 학생용 PDF 출력물, 필기도구를 준비하세요.</p><p><strong>선수학습:</strong> 제곱근의 뜻, 피타고라스 정리, 유리수와 순환소수. 도입에서 이해를 확인하고 필요한 경우 짧게 복습합니다.</p><p><strong>시간 배분:</strong> 사건 접수 5분 → 단서 탐구 12분 → 개념 정리 8분 → 분류·활용 15분 → 출구 티켓 5분.</p><p>진행 표시와 선택한 답은 이 브라우저에 저장됩니다. 공동 기기를 다음 모둠이 사용할 때에는 ‘처음부터’를 눌러 초기화하세요. 학생 답안을 서버로 전송하지 않습니다.</p></div></details>
+  <details><summary>성취기준·출처·지도 시 유의점</summary><div class="details-body"><p><strong>[9수01-08]</strong> 무리수의 개념을 이해하고, 무리수의 유용성을 인식할 수 있다.</p><p>교육부 고시 제2022-33호 [별책 8] 수학과 교육과정, 중학교 수와 연산. 교육과정 MCP의 공식 원문을 확인하여 구성했습니다. 교육과정은 중학교 1~3학년군으로 제시되며, 이 자료는 중3 수업용으로 설계했습니다.</p><p><a href="https://ncic.re.kr/inv/org/download.do?year=2022&amp;seq=10003559&amp;orgType=ogi4" target="_blank" rel="noopener">NCIC 수학과 교육과정 원문 ↗</a> · <a href="https://www.law.go.kr/admRulInfoP.do?admRulSeq=2100000273516" target="_blank" rel="noopener">교육과정 적용 일정 ↗</a></p><p><strong>공식 지도 근거:</strong> 교육부 고시 제2022-33호 [별책 3] 중학교 교육과정 186쪽은 생활 속 무리수의 필요성과 유용성, 실수의 구성을 다루며, 피타고라스 정리와 정사각형 대각선을 통한 직관적 도입 및 계산기 활용을 제시합니다.</p><p><strong>이 자료의 지도 제안:</strong> 근삿값 탐구와 무리수의 증명을 구분합니다. 무한소수 전체를 무리수로 일반화하지 않도록 순환소수를 함께 비교합니다. 실수의 분류는 핵심 개념을 연결하는 수준으로 다룹니다.</p><p>수업 자료와 문항은 새로 구성했으며, 특정 출판사 교과서나 공식 지도서의 복제본이 아닙니다. 교사용 해설도 공개 자료이므로 시험 보안용으로 사용하지 마세요.</p></div></details>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark">√2</span><span>무리수 탐정단<small>작은 질문에서 시작하는 수학</small></span></a><p>중학교 3학년 · 2022 개정 교육과정<br>학습자료 + 활동지 + 교사용 해설</p><a href="#top">맨 위로 ↑</a></div></footer>
+</body></html>
+
